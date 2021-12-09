@@ -1,0 +1,75 @@
+/* Estilização das barrinhas para abrir o menu. */
+.hamburguer {
+    width: 2em;
+    height: 2em;
+    position: fixed;
+    right: 3em;
+    top: 2.5em;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.hamburguer span {
+    background-color: #723b99;
+    position: absolute;
+    display: flex;
+    left: 5em;
+    width: 6em;
+    height: 3em;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-action);
+    color: #fff;
+    opacity: 0;
+    transition: all 1.3s;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #723b99;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span {
+    opacity: 1;
+}
+
+.show-menu .hamburguer{
+    right: 16rem;
+}
+
+.line {
+    background-color: #fff;
+    width: 100%;
+    height: .25rem;
+    box-shadow: 5px 3px 3px #000;
+    transition: all 1s;
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+.show-menu #line1 {
+    transform: rotate(45deg) translate(.5rem, .43rem);
+    transition: all 1s;
+    background-color: #6a3093;
+    box-shadow: none;
+}
+
+.show-menu #line3 {
+    transform: rotate(-45deg) translate(.5rem, -.43rem);
+    transition: all 1s;
+    background-color: #6a3093;
+    box-shadow: none;
+}

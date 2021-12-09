@@ -1,0 +1,56 @@
+/* ----------------------------------------------- */
+/* -------------- Estilização MENU --------------- */
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+
+.show-menu .sidebar {
+    right: 0;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-link {
+    color: #000;
+    font-family: var(--font-action);
+    font-size: 1.8em;
+    line-height: 1.7em;
+    transition: color 1s;
+}
+
+.menu-link:hover {
+    color: #6a3093;
+}
+
+.menu {
+    position: relative;
+    width: auto;
+    top: 12em;
+}
+
+.social-media {
+    position: absolute;
+    width: 100%;
+    bottom: 4em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media i {
+    width: 2rem;
+    font-size: 2.3em;
+    text-align: center;
+    transition: color 1s;
+}
+
+.social-media i:hover {
+    color: #723b99;
+}
