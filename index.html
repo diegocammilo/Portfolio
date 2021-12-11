@@ -13,6 +13,8 @@
     <link rel="stylesheet" href=".css/reset.css">
     <link rel="stylesheet" href=".css/sectionheader.css">
     <link rel="stylesheet" href=".css/contact.css">
+    <link rel="stylesheet" href=".css/footer.css">
+    <link rel="stylesheet" href=".css/scroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;700&family=Josefin+Slab:wght@100;200;300;400;500;700&family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -35,7 +37,11 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <div class="scrollburguer">
+            <div class="containerscroll"><a onclick="document.querySelector('#mainheaderpage').scrollIntoView({behavior:'smooth'});"><i class="fas fa-arrow-up"></a></i></div>
+        </div>
+
+        <header id="mainheaderpage">
             <div class="img-wrapper">
                 <img src="img/fotis-fotopoulos-SyvsTmuuZyM-unsplash.jpg" alt="Foto do background ilustrando um developer.">
             </div>
@@ -50,22 +56,22 @@
         <div class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamentos</a></li>
+                    <li class="menu-item"><a onclick="document.querySelector('#mainheaderpage').scrollIntoView({behavior:'smooth'})"; class="menu-link">Home</a></li>
+                    <li class="menu-item"><a onclick="document.querySelector('#knowledgesection').scrollIntoView({behavior:'smooth'})"; class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a onclick="document.querySelector('#projectsection').scrollIntoView({behavior:'smooth'})"; class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a onclick="document.querySelector('#contactsection').scrollIntoView({behavior:'smooth'})"; class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="https://diegocammilo.github.io" class="menu-link">Acesse</a></li>
                 </ul>
             </nav>
 
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/diegocammilo_/" target="blank_"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/diegocammilo" target="blank_"><i class="fab fa-github"></i></a>
             </div>
         </div>
 
-        <section class="sessao-conhecimentos">
+        <section id="knowledgesection" class="sessao-conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -131,7 +137,7 @@
             </div>
         </section>
 
-        <section class="sessao-projetos">
+        <section id="projectsection" class="sessao-projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -175,7 +181,7 @@
         </section>
         
 
-        <section class="sessao-contato">
+        <section id="contactsection" class="sessao-contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -200,6 +206,15 @@
                 </div>
             </div>
         </section>
+
+        <footer class="content-footer">
+            <p>Copyright &copy; 2020</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/diegocammilo_/" target="blank_"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/diegocammilo" target="blank_"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
     </div>
 
 </body>

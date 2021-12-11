@@ -1,0 +1,12 @@
+footer.content-footer {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-shadow: .2rem .2rem .2rem #000;
+}
+
+.footer-icons {
+    margin-left: 10px;
+    text-shadow: .2rem .2rem .2rem #000;
+}

@@ -1,0 +1,23 @@
+.scrollburguer {
+    position: fixed;
+    right: 3rem ;
+    bottom: 2.5rem;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.containerscroll {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.scrollburguer i {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.8);
+}
