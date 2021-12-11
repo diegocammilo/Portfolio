@@ -8,10 +8,12 @@
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 1;
 }
 
 .show-menu .sidebar {
     right: 0;
+    box-shadow: -.3rem -.3rem 1.5rem #000;
 }
 
 .menu-item {
@@ -24,6 +26,7 @@
     font-size: 1.8em;
     line-height: 1.7em;
     transition: color 1s;
+    cursor: pointer;
 }
 
 .menu-link:hover {
